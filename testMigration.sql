@@ -22,6 +22,16 @@ create table if not exists users(
     primary key(id)
 );
 
+create table if not exists books(
+    id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    author_first_name VARCHAR(100) NOT NULL,
+    author_last_name VARCHAR(100),
+    year CHAR(4),
+    synopsis TEXT,
+    PRIMARY KEY(id)
+);
+
 create table if not exists contacts(
     id int unsigned not null auto_increment,
     first_name varchar(50),
